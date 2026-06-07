@@ -13,16 +13,24 @@
 <body>
   <header class="site-header" data-header>
     <a class="brand" href="#top" aria-label="Disciples of Dirt home">
-      <span class="brand-mark">DoD</span>
-      <span>Disciples of Dirt</span>
+      <img class="brand-logo" src="assets/dod-logo-white-text.png" alt="Disciples of Dirt">
     </a>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-label="Open navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
     <nav class="nav" aria-label="Primary navigation">
-      <a href="#mission">Mission</a>
-      <a href="#impact">Impact</a>
-      <a href="#get-involved">Get involved</a>
+      <a href="#mission">About</a>
+      <a href="#trails">Trails</a>
+      <a href="https://disciplesofdirt.org/events/">Events</a>
+      <a href="#get-involved">Get Involved</a>
+      <a href="https://disciplesofdirt.org/membership">Membership</a>
+      <a href="supporters.html">Supporters</a>
       <a href="#faq">FAQ</a>
+      <a href="https://disciplesofdirt.org/contact-us/">Contact</a>
     </nav>
-    <a class="header-cta" href="#join">Join</a>
+    <a class="header-cta" href="#join">Join DoD</a>
   </header>
 
   <main id="top">
@@ -33,32 +41,33 @@
       </picture>
       <div class="hero-scrim"></div>
       <div class="hero-content">
-        <p class="eyebrow">Established 1987 / Southern Willamette Valley</p>
-        <h1>More trails to ride tomorrow.</h1>
-        <p class="hero-copy">Disciples of Dirt is a mountain bike club and trail stewardship nonprofit building sustainable singletrack, protecting access, and turning local support into dirt under tires.</p>
+        <p class="eyebrow">Lane County's mountain bike trail stewardship club</p>
+        <h1>Build. <span>Ride.</span> Protect.<small>Local trails.</small></h1>
+        <p class="hero-copy">Disciples of Dirt builds community through trail work, advocacy, group rides, events, and volunteer-powered local access.</p>
         <div class="hero-actions">
-          <a class="button primary" href="#join">Join or donate</a>
-          <a class="button secondary" href="#get-involved">Volunteer</a>
+          <a class="button primary" href="#join">Join DoD</a>
+          <a class="button secondary brown" href="#get-involved">Volunteer</a>
+          <a class="button secondary blue" href="https://disciplesofdirt.org/donate/">Donate</a>
         </div>
       </div>
     </section>
 
     <section class="impact-strip" aria-label="Key club statistics">
       <div>
-        <strong>1987</strong>
-        <span>club founded</span>
+        <strong>200+</strong>
+        <span>members</span>
       </div>
       <div>
-        <strong>2013</strong>
-        <span>charity era begins</span>
+        <strong>40</strong>
+        <span>years of stewardship</span>
       </div>
       <div>
-        <strong>1,000+</strong>
-        <span>volunteer hours recorded annually, roughly</span>
+        <strong>10,000+</strong>
+        <span>volunteer hours since becoming a charity</span>
       </div>
       <div>
-        <strong>91%</strong>
-        <span>2026 YTD spending to trails + programs</span>
+        <strong>4+</strong>
+        <span>trail systems you love</span>
       </div>
     </section>
 
@@ -92,6 +101,54 @@
         <p>Memberships, donations, sponsorships, and grants turn into tools, materials, contractor support, snacks, signage, and stewardship.</p>
         <a href="#impact">See the numbers</a>
       </article>
+    </section>
+
+    <section class="trail-section" id="trails">
+      <div class="section-kicker">Trails</div>
+      <div class="trail-header">
+        <h2>The trails we help care for.</h2>
+        <p>These are the big local systems people expect to find fast. Each card links to the current DoD trail page and Trailforks map, with embedded Trailforks widgets where the public region id is stable.</p>
+      </div>
+      <div class="trail-grid">
+        <article class="trail-card">
+          <div class="trail-map fallback-map">
+            <span>Carpenter Bypass / Whypass</span>
+          </div>
+          <div class="trail-card-copy">
+            <h3>Carpenter Bypass</h3>
+            <p>Year-round BLM trail system with cross-country, old-school downhill, and modern machine-built jump and flow trails.</p>
+            <a href="https://disciplesofdirt.org/carpenter-bypass/">DoD trail page</a>
+            <a href="https://www.trailforks.com/region/carpenter-bypass/">Trailforks map</a>
+          </div>
+        </article>
+        <article class="trail-card">
+          <iframe class="trail-map" title="Thurston Hills Trailforks map" loading="lazy" src="https://www.trailforks.com/widgets/region_map/?rid=24154&activitytype=1&maptype=trailforks&trailstyle=difficulty&controls=1&noheader=1"></iframe>
+          <div class="trail-card-copy">
+            <h3>Thurston Hills</h3>
+            <p>Springfield's urban trail system with shared-use climbing routes, dedicated downhill trails, and seasonal condition needs.</p>
+            <a href="https://disciplesofdirt.org/thurston-hills/">DoD trail page</a>
+            <a href="https://www.trailforks.com/region/thurston-hills-natural-area-24154/">Trailforks map</a>
+          </div>
+        </article>
+        <article class="trail-card">
+          <iframe class="trail-map" title="Ridgeline Trailforks map" loading="lazy" src="https://www.trailforks.com/widgets/region_map/?rid=21217&activitytype=1&maptype=trailforks&trailstyle=difficulty&controls=1&noheader=1"></iframe>
+          <div class="trail-card-copy">
+            <h3>Ridgeline</h3>
+            <p>Eugene's urban multi-use system, including Pipedream and future opportunities around Suzanne Arlie Park.</p>
+            <a href="https://disciplesofdirt.org/ridgeline/">DoD trail page</a>
+            <a href="https://www.trailforks.com/region/ridgeline-park-21217/">Trailforks map</a>
+          </div>
+        </article>
+        <article class="trail-card">
+          <iframe class="trail-map" title="Oakridge Trailforks map" loading="lazy" src="https://www.trailforks.com/widgets/region_map/?rid=4319&activitytype=1&maptype=trailforks&trailstyle=difficulty&controls=1&noheader=1"></iframe>
+          <div class="trail-card-copy">
+            <h3>Oakridge</h3>
+            <p>IMBA Gold-level destination riding, with a long DoD stewardship history and ongoing partnership with OTA.</p>
+            <a href="https://disciplesofdirt.org/oakridge/">DoD trail page</a>
+            <a href="https://www.trailforks.com/region/oakridge/">Trailforks map</a>
+          </div>
+        </article>
+      </div>
     </section>
 
     <section class="efficiency-section" id="impact">
@@ -149,6 +206,24 @@
       </div>
     </section>
 
+    <section class="newsletter-section" id="newsletter">
+      <div>
+        <div class="section-kicker">Stay in touch</div>
+        <h2>Not ready to join? Get the newsletter.</h2>
+        <p>The newsletter is the next best thing to membership: trail work days, group rides, events, advocacy updates, and the occasional urgent call for hands.</p>
+      </div>
+      <a class="button primary" href="https://disciplesofdirt.org/newsletters/">Join the newsletter</a>
+    </section>
+
+    <section class="supporter-preview">
+      <div>
+        <div class="section-kicker">Supporters</div>
+        <h2>Local support keeps the tools sharp.</h2>
+        <p>DoD should have a real shoutout page for sponsors, donors, partners, land managers, and businesses that make trail work possible.</p>
+      </div>
+      <a class="button secondary dark" href="supporters.html">See supporters</a>
+    </section>
+
     <section class="faq-section" id="faq">
       <div class="section-kicker">FAQ</div>
       <h2>Start here.</h2>
@@ -187,6 +262,7 @@
       </div>
       <div class="join-actions">
         <a class="button primary" href="https://disciplesofdirt.org/get-involved/">Join DoD</a>
+        <a class="button secondary" href="https://disciplesofdirt.org/newsletters/">Newsletter</a>
         <a class="button secondary dark" href="https://www.trailwerk.com/">Report TrailWerk</a>
       </div>
     </section>
