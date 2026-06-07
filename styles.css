@@ -586,9 +586,14 @@ h2 {
 }
 
 .newsletter-section,
+.portal-section,
 .supporter-preview {
   max-width: 1180px;
   margin: 0 auto;
+}
+
+.newsletter-section,
+.supporter-preview {
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 32px;
@@ -601,6 +606,41 @@ h2 {
 
 .supporter-preview {
   padding-top: 0;
+}
+
+.portal-section {
+  padding-top: 0;
+}
+
+.portal-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.portal-grid article {
+  display: grid;
+  align-content: start;
+  justify-items: start;
+  gap: 18px;
+  min-height: 260px;
+  padding: 30px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.portal-grid h2 {
+  font-size: 44px;
+}
+
+.portal-grid p {
+  max-width: 520px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.6;
 }
 
 .story-media img {
@@ -839,6 +879,7 @@ details p {
   .supporter-cta,
   .trail-header,
   .trail-grid,
+  .portal-grid,
   .newsletter-section,
   .supporter-preview,
   .mission-layout,
