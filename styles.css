@@ -746,11 +746,13 @@ details p {
   font-weight: 800;
 }
 
-.supporters-page {
+.supporters-page,
+.events-page {
   background: #fbf7ef;
 }
 
-.supporter-hero {
+.supporter-hero,
+.events-hero {
   min-height: 560px;
   display: grid;
   grid-template-columns: 1fr;
@@ -762,7 +764,8 @@ details p {
   padding-top: 150px;
 }
 
-.supporter-hero h1 {
+.supporter-hero h1,
+.events-hero h1 {
   max-width: 920px;
   margin: 0;
   font-size: 78px;
@@ -770,11 +773,86 @@ details p {
   text-transform: uppercase;
 }
 
-.supporter-hero p:last-child {
+.supporter-hero p:last-child,
+.events-hero p {
   max-width: 660px;
   margin: 24px 0 0;
   font-size: 20px;
   line-height: 1.5;
+}
+
+.events-hero .hero-actions {
+  margin-top: 30px;
+}
+
+.calendar-section {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.calendar-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 28px;
+  align-items: end;
+  margin-bottom: 28px;
+}
+
+.calendar-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.calendar-frame {
+  width: 100%;
+  height: 680px;
+  display: block;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+}
+
+.event-workflow {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  padding-top: 0;
+}
+
+.event-workflow article {
+  min-height: 220px;
+  padding: 28px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.event-workflow span {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  color: #fffdf8;
+  background: var(--green);
+  border-radius: 50%;
+  font-weight: 900;
+}
+
+.event-workflow h3 {
+  margin: 22px 0 12px;
+  font-size: 28px;
+}
+
+.event-workflow p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
 }
 
 .supporter-list-section {
@@ -883,8 +961,11 @@ details p {
   .benchmark-grid,
   .story-section,
   .supporter-hero,
+  .events-hero,
   .supporter-list,
   .supporter-cta,
+  .calendar-header,
+  .event-workflow,
   .trail-header,
   .trail-grid,
   .portal-grid,
@@ -977,8 +1058,17 @@ details p {
     height: 260px;
   }
 
-  .supporter-hero h1 {
+  .supporter-hero h1,
+  .events-hero h1 {
     font-size: 56px;
+  }
+
+  .calendar-actions {
+    justify-content: flex-start;
+  }
+
+  .calendar-frame {
+    height: 620px;
   }
 
 }
@@ -1096,13 +1186,19 @@ details p {
     height: 230px;
   }
 
-  .supporter-hero {
+  .supporter-hero,
+  .events-hero {
     min-height: auto;
     padding-top: 120px;
   }
 
-  .supporter-hero h1 {
+  .supporter-hero h1,
+  .events-hero h1 {
     font-size: 40px;
+  }
+
+  .calendar-frame {
+    height: 560px;
   }
 
   .supporter-list article {
