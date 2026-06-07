@@ -677,6 +677,19 @@ h2 {
   background: var(--orange);
 }
 
+.evolution-mark {
+  margin: 28px 0 0;
+  padding: 18px;
+  background: #fffdf8;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.evolution-mark img {
+  width: 100%;
+  display: block;
+}
+
 .faq-section h2 {
   margin-bottom: 28px;
 }
