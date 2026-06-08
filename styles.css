@@ -766,6 +766,11 @@ details p {
   padding: 0 24px 24px;
 }
 
+details a {
+  color: var(--green);
+  font-weight: 900;
+}
+
 .join-section {
   display: grid;
   grid-template-columns: 1fr auto;
