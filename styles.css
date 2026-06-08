@@ -381,7 +381,7 @@ h2 {
 
 .trail-photo-link {
   display: block;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 3 / 2;
   overflow: hidden;
   margin: 0;
   background: #0f3d2a;
@@ -392,14 +392,6 @@ h2 {
   height: 100%;
   display: block;
   object-fit: cover;
-}
-
-.trail-photo-cbp {
-  object-position: center 46%;
-}
-
-.trail-photo-thurston {
-  object-position: center 42%;
 }
 
 .trail-card-copy {
