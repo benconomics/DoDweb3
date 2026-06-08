@@ -96,6 +96,7 @@ a {
 .nav a:focus-visible,
 .header-cta:focus-visible,
 .button:focus-visible,
+.trail-photo-link:focus-visible,
 summary:focus-visible,
 input:focus-visible,
 select:focus-visible,
@@ -378,26 +379,41 @@ h2 {
   box-shadow: var(--shadow);
 }
 
-.trail-map {
-  width: 100%;
-  height: 290px;
+.trail-photo-link {
   display: block;
-  border: 0;
+  overflow: hidden;
+  margin: 0;
   background: #dde4d8;
 }
 
-.fallback-map {
-  display: grid;
-  place-items: center;
-  padding: 26px;
-  color: #fffdf8;
-  background:
-    linear-gradient(rgba(15, 61, 42, 0.84), rgba(15, 61, 42, 0.84)),
-    url("assets/website-banner-square.jpg") center / cover;
-  text-align: center;
-  font-size: 24px;
-  font-weight: 900;
-  text-transform: uppercase;
+.trail-photo {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  display: block;
+  object-fit: cover;
+  transition: transform 240ms ease;
+}
+
+.trail-photo-link:hover .trail-photo {
+  transform: scale(1.025);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .trail-photo {
+    transition: none;
+  }
+}
+
+.trail-photo-thurston {
+  object-position: center 42%;
+}
+
+.trail-photo-ridgeline {
+  object-position: center 54%;
+}
+
+.trail-photo-oakridge {
+  object-position: center 58%;
 }
 
 .trail-card-copy {
@@ -416,9 +432,15 @@ h2 {
   line-height: 1.55;
 }
 
-.trail-card a {
+.trail-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 16px;
+  margin-top: 18px;
+}
+
+.trail-card-actions a {
   display: inline-flex;
-  margin: 0 14px 8px 0;
   color: var(--green);
   font-weight: 900;
 }
@@ -1195,10 +1217,6 @@ details a {
     justify-content: flex-start;
   }
 
-  .trail-map {
-    height: 260px;
-  }
-
   .supporter-hero h1,
   .events-hero h1,
   .contact-hero h1 {
@@ -1324,10 +1342,6 @@ details a {
 
   .trail-card-copy {
     padding: 20px;
-  }
-
-  .trail-map {
-    height: 230px;
   }
 
   .supporter-hero,

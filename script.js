@@ -8,6 +8,13 @@ const updateHeader = () => {
 window.addEventListener("scroll", updateHeader, { passive: true });
 updateHeader();
 
+window.addEventListener("load", () => {
+  if (!window.location.hash) return;
+  const targetId = decodeURIComponent(window.location.hash.slice(1));
+  const target = document.getElementById(targetId);
+  target?.scrollIntoView({ behavior: "auto" });
+});
+
 navToggle?.addEventListener("click", () => {
   const isOpen = header.classList.toggle("nav-open");
   navToggle.setAttribute("aria-expanded", String(isOpen));
