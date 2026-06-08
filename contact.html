@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Disciples of Dirt</title>
+  <meta name="description" content="Contact Disciples of Dirt about trail work, events, membership, supporters, and general club questions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="contact-page">
+  <header class="site-header is-scrolled" data-header>
+    <a class="brand" href="index.html#top" aria-label="Disciples of Dirt home">
+      <img class="brand-logo" src="assets/dod-logo-white-text.png" alt="Disciples of Dirt">
+    </a>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-label="Open navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="index.html#mission">About</a>
+      <a href="index.html#trails">Trails</a>
+      <a href="events.html">Events</a>
+      <a href="index.html#get-involved">Get Involved</a>
+      <a href="https://disciplesofdirt.org/membership/">Membership</a>
+      <a href="supporters.html">Supporters</a>
+    </nav>
+    <a class="header-cta" href="index.html#join">Join DoD</a>
+  </header>
+
+  <main>
+    <section class="contact-hero">
+      <p class="eyebrow">Contact DoD</p>
+      <h1>Send the right note to the right inbox.</h1>
+      <p>This form opens a pre-filled email to communication@disciplesofdirt.org. It keeps the static demo simple while still giving visitors a clear path to reach the club.</p>
+    </section>
+
+    <section class="contact-section">
+      <form class="contact-form" data-contact-form>
+        <label>
+          Your name
+          <input type="text" name="name" autocomplete="name" placeholder="Jane Rider">
+        </label>
+        <label>
+          Your email
+          <input type="email" name="email" autocomplete="email" placeholder="jane@example.com">
+        </label>
+        <label>
+          Topic
+          <select name="topic" data-contact-topic>
+            <option value="General question">General question</option>
+            <option value="Event submission">Event submission</option>
+            <option value="Trail work / volunteer">Trail work / volunteer</option>
+            <option value="Membership">Membership</option>
+            <option value="Supporter / sponsorship">Supporter / sponsorship</option>
+            <option value="Website feedback">Website feedback</option>
+          </select>
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="8" placeholder="What should DoD know?"></textarea>
+        </label>
+        <div class="contact-actions">
+          <button class="button primary" type="submit">Open email</button>
+          <a class="button secondary dark" href="mailto:communication@disciplesofdirt.org">Email directly</a>
+        </div>
+        <p class="form-note">No message is sent until you send it from your own email app.</p>
+      </form>
+      <aside class="contact-aside">
+        <h2>Quick routing.</h2>
+        <p>Use this for event submissions, newsletter questions, volunteer interest, sponsor updates, website corrections, and general club communication.</p>
+        <a href="mailto:communication@disciplesofdirt.org">communication@disciplesofdirt.org</a>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>Disciples of Dirt</span>
+    <span><a href="index.html">Home</a> / <a href="events.html">Events</a></span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

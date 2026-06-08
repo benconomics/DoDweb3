@@ -747,12 +747,14 @@ details p {
 }
 
 .supporters-page,
-.events-page {
+.events-page,
+.contact-page {
   background: #fbf7ef;
 }
 
 .supporter-hero,
-.events-hero {
+.events-hero,
+.contact-hero {
   min-height: 560px;
   display: grid;
   grid-template-columns: 1fr;
@@ -765,7 +767,8 @@ details p {
 }
 
 .supporter-hero h1,
-.events-hero h1 {
+.events-hero h1,
+.contact-hero h1 {
   max-width: 920px;
   margin: 0;
   font-size: 78px;
@@ -774,7 +777,8 @@ details p {
 }
 
 .supporter-hero p:last-child,
-.events-hero p {
+.events-hero p,
+.contact-hero p {
   max-width: 660px;
   margin: 24px 0 0;
   font-size: 20px;
@@ -853,6 +857,84 @@ details p {
   margin: 0;
   color: var(--muted);
   line-height: 1.6;
+}
+
+.contact-section {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.contact-form,
+.contact-aside {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.contact-form {
+  display: grid;
+  gap: 18px;
+  padding: 30px;
+}
+
+.contact-form label {
+  display: grid;
+  gap: 8px;
+  color: var(--green);
+  font-weight: 900;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  color: var(--ink);
+  background: #fffdf8;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font: inherit;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.form-note {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.contact-aside {
+  padding: 30px;
+}
+
+.contact-aside h2 {
+  font-size: 42px;
+}
+
+.contact-aside p {
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.contact-aside a {
+  color: var(--green);
+  font-weight: 900;
+  overflow-wrap: anywhere;
 }
 
 .supporter-list-section {
@@ -962,10 +1044,12 @@ details p {
   .story-section,
   .supporter-hero,
   .events-hero,
+  .contact-hero,
   .supporter-list,
   .supporter-cta,
   .calendar-header,
   .event-workflow,
+  .contact-section,
   .trail-header,
   .trail-grid,
   .portal-grid,
@@ -1059,7 +1143,8 @@ details p {
   }
 
   .supporter-hero h1,
-  .events-hero h1 {
+  .events-hero h1,
+  .contact-hero h1 {
     font-size: 56px;
   }
 
@@ -1187,13 +1272,15 @@ details p {
   }
 
   .supporter-hero,
-  .events-hero {
+  .events-hero,
+  .contact-hero {
     min-height: auto;
     padding-top: 120px;
   }
 
   .supporter-hero h1,
-  .events-hero h1 {
+  .events-hero h1,
+  .contact-hero h1 {
     font-size: 40px;
   }
 
