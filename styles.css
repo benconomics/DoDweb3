@@ -383,37 +383,13 @@ h2 {
   display: block;
   overflow: hidden;
   margin: 0;
-  background: #dde4d8;
+  background: #0f3d2a;
 }
 
 .trail-photo {
   width: 100%;
-  aspect-ratio: 16 / 10;
+  height: auto;
   display: block;
-  object-fit: cover;
-  transition: transform 240ms ease;
-}
-
-.trail-photo-link:hover .trail-photo {
-  transform: scale(1.025);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .trail-photo {
-    transition: none;
-  }
-}
-
-.trail-photo-thurston {
-  object-position: center 42%;
-}
-
-.trail-photo-ridgeline {
-  object-position: center 54%;
-}
-
-.trail-photo-oakridge {
-  object-position: center 58%;
 }
 
 .trail-card-copy {
